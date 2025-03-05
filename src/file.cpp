@@ -391,6 +391,9 @@ typedef struct _FILE_ALLOCATED_RANGE_BUFFER {
 #ifdef O_SYNC
 			| ((mode & open_mode::no_cache) ? O_SYNC : 0)
 #endif
+#ifdef O_DIRECT
+			| ((mode & open_mode::direct_io) ? O_DIRECT : 0)
+#endif
 			;
 	}
 

@@ -54,6 +54,7 @@ namespace aux {
 		constexpr open_mode_t executable = 7_bit;
 		constexpr open_mode_t allow_set_file_valid_data = 8_bit;
 		constexpr open_mode_t no_mmap = 9_bit;
+		constexpr open_mode_t direct_io = 10_bit;
 	}
 } // aux
 
